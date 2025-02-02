@@ -11,7 +11,7 @@ jobs:
         run: |
           podman run -d --name rdesktop \
             --cap-add=NET_ADMIN --cap-add=NET_RAW --device=/dev/net/tun --device=/dev/fuse \
-            ghcr.io/gbraad-apps/<replace>:latest
+            ghcr.io/gbraad-apps/joplin:latest
       - name: Tailscale setup (root)
         run: |
           until podman exec rdesktop tailscale up --auth-key ${TAILSCALE_AUTHKEY} --hostname github-${HOSTNAME}

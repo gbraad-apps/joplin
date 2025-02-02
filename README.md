@@ -1,4 +1,4 @@
-Template to create personal apps
+Joplin for personal (remote) use
 ================================
 
 > [!NOTE]
